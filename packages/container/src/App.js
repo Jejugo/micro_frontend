@@ -4,7 +4,9 @@ import Header from "./components/Header";
 import { BrowserRouter } from "react-router-dom";
 import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 
-const generateClassName = createGenerateClassName();
+const generateClassName = createGenerateClassName({
+  productionPrefix: "container"
+});
 
 export default function App() {
   return (
